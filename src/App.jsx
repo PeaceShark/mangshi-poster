@@ -5,10 +5,10 @@ const ItineraryPoster = () => {
   const [activeDay, setActiveDay] = useState(0);
 
   const days = [
-  { date: '12.31', title: '跨年·初见芒市', sub: 'Arrival & New Year Eve' },
-  { date: '01.01', title: '朝圣·金塔日落', sub: 'Golden Pagoda & Relax' }, // 01.01 不动
-  { date: '01.02', title: '珍奇·异域乐园', sub: 'Rare Garden & Night Market' }, // 仅改：下午去珍奇园
-  { date: '01.03', title: '告别·雨林咖啡', sub: 'Coffee & Departure' },
+    { date: '12.31', title: '跨年·初见芒市', sub: 'Arrival & New Year Eve' },
+    { date: '01.01', title: '朝圣·金塔日落', sub: 'Golden Pagoda & Relax' }, // 01.01 不动
+    { date: '01.02', title: '珍奇·异域乐园', sub: 'Rare Garden & Night Market' }, // 仅改：下午去珍奇园
+    { date: '01.03', title: '告别·雨林咖啡', sub: 'Coffee & Departure' },
   ];
 
   const scheduleData = {
@@ -305,7 +305,7 @@ const ItineraryPoster = () => {
                 {day.date}
               </div>
               <div className="text-[10px] uppercase tracking-wider mt-1 opacity-80 truncate px-1">
-                {day.date === '12.31' ? '跨年' : day.date === '01.01' ? '金塔' : day.date === '01.02' ? '老城' : '返程'}
+                {day.date === '12.31' ? '跨年' : day.date === '01.01' ? '金塔' : day.date === '01.02' ? '异域' : '老街'}
               </div>
               {activeDay === index && (
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-amber-400"></div>
